@@ -1,0 +1,87 @@
+/* Styles for the Beauty Parlor website */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+/* Set background color and font styles */
+body {
+  font-weight: 700;
+  background-color: rgba(242, 247, 245, 0.8);
+  /* background-image: url("https://img.freepik.com/free-vector/realistic-makeup-background_23-2149373139.jpg?w=2000"); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  font-family: 'Urbanist', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.ok{
+  width: 80%;
+  margin: auto;
+}
+/* Center align the headings */
+h1, h2 {
+  text-align: center;
+}
+
+/* Add some spacing around the headings */
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Add padding and a border around the paragraphs */
+p {
+  padding: 10px;
+  /* border: 1px solid #88b7a9; */
+  border-radius: 5px;
+  /* background-color: #ffffff; */
+  margin-bottom: 20px;
+}
+
+/* Style the unordered list */
+/* div ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+}
+
+/* Style the list items */
+/* div li {
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+  /* padding: 10px;
+  border: 1px solid #88b7a9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}  */
+
+/* Style the links */
+a {
+  color: #7533e7;
+  text-decoration: none;
+}
+
+/* a:hover {
+  text-decoration: underline;
+} */
+
+/* Highlighted box for font */
+.highlighted-box {
+  background-color: #4a9c8d;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+

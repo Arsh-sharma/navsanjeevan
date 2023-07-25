@@ -1,0 +1,102 @@
+/* Styles for the Financial Assistance Form */
+
+/* Reset default margin and padding */
+body, h1, form, label, input {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and font styles */
+  body {
+    background-color: #e6c8df;
+    /* background-image: url("th.jpg"); */
+    
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    padding: 20px;
+     font-family: 'Urbanist', sans-serif;
+  }
+  
+  /* Center align the heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Add spacing and style for labels */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #ffc400;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin: auto; */
+  }
+  input[type="submit"]:hover {
+    background-color: #43ca92;
+  }
+  
+  .bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+   align-items:flex-start;
+   margin-top: 120px;
+  justify-content: center; 
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(128, 200, 212) 0%, rgb(127, 212, 127) 25%, rgb(214, 148, 178) 51%, #edc282 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

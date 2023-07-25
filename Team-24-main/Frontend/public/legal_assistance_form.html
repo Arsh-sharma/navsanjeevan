@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./css/form-wec.css">
+
+<html>
+<head>
+  <title>Legal Assistance Form</title>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg">
+  
+  
+  <form id="dataForm">
+    <h1>Legal Assistance Form</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="name">State your issue:</label>
+    <textarea rows="20" cols="54" style="border-radius: 5px; border-color: #cccccc; margin-bottom: 20px;" id="textarea"></textarea>
+    <!-- Add more fields as needed -->
+    
+    <input type="submit" value="Submit" ;>
+    <input type="submit" value="Go-Back" style="margin-bottom: 20px;" onclick="goBackToOtherPage()">
+  </form>
+   <script>
+    function goBackToOtherPage() {
+  // Replace "other-page.html" with the URL of the page you want to navigate back to
+  window.location.href = "we_base.html";
+}
+  </script>
+</body>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+  import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB25mC245JJN-NS8HPOcDCgk7IPI3iqs-8",
+    authDomain: "navsanjeevan-7791b.firebaseapp.com",
+    projectId: "navsanjeevan-7791b",
+    storageBucket: "navsanjeevan-7791b.appspot.com",
+    messagingSenderId: "1067054070452",
+    appId: "1:1067054070452:web:0e8ee9efadd18e0f1935e1",
+    measurementId: "G-DKGYX2LX2X"
+  };
+
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const database = getDatabase(app);
+
+  // Function to save data to Firebase
+  function saveDataToFirebase(name, email, textarea) {
+    // Generate a new unique key for each data entry (optional)
+    const newEntryRef = push(ref(database, 'legal-assistance'));
+
+    // Set the data under the unique key
+   set(newEntryRef, {
+      name: name,
+      email: email,
+      textarea: textarea
+    });
+  }
+
+  // Add event listener to the form submission
+  const dataForm = document.getElementById("dataForm");
+  dataForm.addEventListener("submit", (e) => {
+    e.preventDefault(); // Prevent form submission
+
+    // Get the form field values
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const textarea = document.getElementById("textarea").value;
+
+    // Call the function to save data to Firebase
+    saveDataToFirebase(name, email, textarea);
+
+    // Reset the form after data is saved (optional)
+    dataForm.reset();
+    // window.location = 'we_base.html';
+  });
+</script>
+</html>

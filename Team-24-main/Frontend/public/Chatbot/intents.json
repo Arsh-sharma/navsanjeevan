@@ -1,0 +1,71 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "mission",
+        "patterns": [
+            "What does Navsanjeevan do?", 
+            "What is Navsanjeevan", 
+            "What do you do"
+        ],
+        "responses": [
+            "Navsanjeevan Social Trust strives to build an equitable and egalitarian society. They aim to alleviate poverty by providing better, sustainable livelihood opportunities for the underprivileged and empowering the next generation with Skill Education. They aim to build a healthy, vibrant, and dynamic society by promoting skill development, career guidance, technical education, women empowerment, community development, and agriculture development.",
+            "Navsanjeevan Social Trust strives to build an equitable and egalitarian society. They aim to alleviate poverty by providing better, sustainable livelihood opportunities for the underprivileged and empowering the next generation with Skill Education. They aim to build a healthy, vibrant, and dynamic society by promoting skill development, career guidance, technical education, women empowerment, community development, and agriculture development."        
+        ]
+      },
+      {
+        "tag": "register",
+        "patterns": [
+            "Sign me up", 
+            "Lets register"
+        ],
+        "responses": [
+            "Follow this link: https://navsanjeevan.com",
+            "Enter the details below: "        
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      }
+    ]
+  }
+  

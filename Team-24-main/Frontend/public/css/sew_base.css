@@ -1,0 +1,51 @@
+*{
+    font-family: 'Urbanist', sans-serif;
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/003/301/432/original/feminism-concept-with-woman-girl-standing-together-free-vector.jpg"); */
+opacity:0.4px;
+
+}
+
+body{
+    height: au;
+}
+
+.ok{
+    width: 80%;
+    margin: auto;
+}
+.bg {
+  /* width: 100%;
+  height: 100vh; */
+  /* display: flex;
+   align-items:flex-start; */
+   /* margin-top: 120px; */
+  /* justify-content: center;  */
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, rgb(128, 200, 212) 0%, rgb(127, 212, 127) 25%, rgb(214, 148, 178) 51%, #edc282 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
